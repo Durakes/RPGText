@@ -9,7 +9,8 @@ private:
     int healthPoints;
     int manaPoints;
     int experiencePoints;
-    
+    std::string enemyClass; //* Implementar enum
+
 public:
     Enemy(/* args */);
     ~Enemy();

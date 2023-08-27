@@ -1,13 +1,13 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#ifndef COMPANION_H
+#define COMPANION_H
 #include <iostream>
 #include <vector>
 
-class Player
+class Companion
 {
 private:
-    //! Separar por atributos en clases mas pequeñas que se puedan reutilizar.
-    std::string playerName;
+    std::string companionName;
+    bool isPlayable;
     int healthPoints;
     int manaPoints;
     int experiencePoints;
@@ -22,20 +22,18 @@ private:
     std::vector<std::string> attacks; //* Implementar clase de ataques.
     std::vector<std::string> magicalAttacks;
     std::vector<std::string> objects; //* Separar en inventario.
-    
-
-
 public:
-    Player();
-    ~Player();
+    Companion(/* args */);
+    ~Companion();
 };
 
-Player::Player(/* args */)
+Companion::Companion(/* args */)
 {
 }
 
-Player::~Player()
+Companion::~Companion()
 {
 }
+
 
 #endif
