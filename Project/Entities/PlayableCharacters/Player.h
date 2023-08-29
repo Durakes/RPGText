@@ -22,12 +22,15 @@ private:
     std::vector<std::string> attacks; //* Implementar clase de ataques.
     std::vector<std::string> magicalAttacks;
     std::vector<std::string> objects; //* Separar en inventario.
-    
-
 
 public:
     Player();
     ~Player();
+
+    std::string getPlayerName() { return playerName; }
+    void setPlayerName(std::string name) { playerName = name; }
+
+    
 };
 
 Player::Player(/* args */)
