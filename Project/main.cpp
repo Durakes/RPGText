@@ -1,5 +1,5 @@
 #include <conio.h>
-#include "../Project/Screens/FirstScreen.cpp"
+#include "Screens/FirstScreen.h"
 
 int main()
 {
@@ -15,7 +15,8 @@ int main()
         //! Falta implementar que reciba el input correcto
     }else
     {
-        FirstScreen::FirstScreen();
+        FirstScreen();
     }
+    
     return 0;
 }

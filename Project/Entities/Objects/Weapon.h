@@ -10,8 +10,8 @@ private:
     std::string weaponType; //* Sword,Bow,etc...
     bool isRanged;
     std::string attribute;
-    double attack;
-    double defense;
+    double attackPoints;
+    double defensePoints;
     std::vector<std::string> attacks;
 public:
     Weapon(/* args */);
