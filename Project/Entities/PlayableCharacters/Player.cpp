@@ -3,7 +3,7 @@
 
 #include "Player.h"
 
-Player::Player(const char* playerName)
+Player::Player(std::string playerName)
 {
     //! Falta implementar clases, clase estandar por mientras.
 
@@ -23,7 +23,7 @@ Player::Player(const char* playerName)
     this->physicalAttacks = {"Punch", "Kick"};
 }
 
-const char* Player::getPlayerName() { return this->playerName; }
-void Player::setPlayerName(const char* name) { this->playerName = name; }
+std::string Player::getPlayerName() { return this->playerName; }
+void Player::setPlayerName(std::string name) { this->playerName = name; }
 
 #endif

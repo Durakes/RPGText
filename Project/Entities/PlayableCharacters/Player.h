@@ -7,7 +7,7 @@ class Player
 {
 private:
     //! Separar por atributos en clases mas pequeñas que se puedan reutilizar.
-    const char* playerName;
+    std::string playerName;
     int healthPoints;
     int manaPoints;
     int experiencePoints;
@@ -25,11 +25,11 @@ private:
     std::vector<std::string> objects; //* Separar en inventario.
 
 public:
-    Player(const char* playerName);
+    Player(std::string playerName);
     //~Player();
 
-    const char* getPlayerName();
-    void setPlayerName(const char* name);
+    std::string getPlayerName();
+    void setPlayerName(std::string name);
 
     /*int getHealthPoints();
     void setHealthPoints(int health);

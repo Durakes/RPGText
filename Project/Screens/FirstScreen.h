@@ -6,7 +6,7 @@
 #include "../Helpers/Constants.h"
 
 void FirstScreen();
-const char *GetName();
-Player CreatePlayer(const char *playerName);
+std::string GetName();
+Player CreatePlayer(std::string playerName);
 
 #endif
