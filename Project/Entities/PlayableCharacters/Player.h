@@ -11,6 +11,7 @@ private:
     int healthPoints;
     int manaPoints;
     int experiencePoints;
+    int levelName;
     std::string playableClass; //* Implementar clase de tipos de clase.
     double attackPoints;
     double specialAttackPoints;

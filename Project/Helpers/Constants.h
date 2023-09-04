@@ -4,6 +4,8 @@
 
 namespace TextRPG
 {
-    constexpr char UNIVERSE_NAME[] = "Phantasia"; 
+    constexpr char UNIVERSE_NAME[] = "Phantasia";
+    constexpr char BLACKSMITH_NAME[] = "Idra";
+    constexpr char VENDOR_NAME[] = "Ilya";
 }
 #endif
