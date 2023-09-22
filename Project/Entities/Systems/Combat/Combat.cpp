@@ -1,7 +1,7 @@
 #include <iostream>
 #include "D:\Development\SideProjects\RPGText\Project\Entities\PlayableCharacters\Goblin.h"
 
-void IntroBattle(std::string enemyName);
+void IntroBattle(Goblin goblin);
 void ActionScreen(std::string playerName);
 void ChooseOption(int menuOption);
 void AttackSelection();
@@ -15,21 +15,28 @@ int damageDone;
 
 int main()
 {
-    IntroBattle("Goblin");
+    Goblin goblin = Goblin();
+    
+    std::cout << goblin.getNameGoblin() << std::endl;
+    IntroBattle(goblin);
     ActionScreen("Player");
+
 
 }
 
 //! Falta implementar las demas acciones, y cambiar por clases.
 
-void IntroBattle(std::string enemyName)
+void IntroBattle(Goblin goblin)
 {
     //! Probar con strings primero, pero debe de recibir los objetos como paremetros.
     system("cls");
-    std::cout << "You are about to enter battle with " << enemyName << "!!!" << std::endl;
+    std::cout << "You are about to enter battle with " << goblin.getNameGoblin() << "!!!" << std::endl;
     std::cout << "Prepare Yourself!!!" << std::endl;
     std::cout << "Press Enter to iniate combat!" << std::endl;
     std::cin.get();
+
+    //Comentario prueba
+    
 }
 
 void ActionScreen(std::string playerName)
@@ -91,6 +98,11 @@ void AttackAction(int attackChoice)
     default:
         break;
     }
+}
+
+void CalculateDamage(Goblin* gob)
+{
+    
 }
 
 void BattleLog(int damageDone)
